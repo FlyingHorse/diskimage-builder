@@ -1,1 +1,6 @@
 linux-image-generic:
+git:
+curl:
+python:
+python-dev:
+python-pip:

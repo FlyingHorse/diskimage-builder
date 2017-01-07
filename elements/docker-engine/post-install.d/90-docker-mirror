@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -eu
+set -o pipefail
+
+curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://24adbce9.m.daocloud.io

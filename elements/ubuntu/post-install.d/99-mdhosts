@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -eu
+set -o pipefail
+
+sudo cat > /etc/init.d/mdhosts.sh <<EOF
+#!/bin/bash
+sed -i "1s/.*/127.0.0.1 localhost $HOSTNAME/" /etc/hosts
+EOF
+
+sudo chmod a+x /etc/init.d/mdhosts.sh
+
+sudo update-rc.d mdhosts.sh defaults 90
