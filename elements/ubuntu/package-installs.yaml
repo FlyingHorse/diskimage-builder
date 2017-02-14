@@ -4,3 +4,33 @@ curl:
 python:
 python-dev:
 python-pip:
+# compression and archivers
+bzip2:
+cpio:
+gzip:
+lzip:
+p7zip-full:
+tar:
+unzip:
+xz-utils:
+zip:
+
+# basic build environment
+g++:
+gcc:
+libc6-dev:
+make:
+# other "standard" utilities
+kexec-tools:
+m4:
+moreutils:
+rsync:
+screen:
+tmux:
+vim:
+
+# ntp
+ntp:
+
+#pdsh
+pdsh:

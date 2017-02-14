@@ -1,0 +1,31 @@
+# nfs server
+nfs-kernel-server:
+nfs-common:
+
+# common
+# support packages
+dmtcp:
+libopenmpi-dev:
+openmpi-bin:
+
+# slurm client
+libpmi0-dev:
+libslurm-dev:
+libslurm-perl:
+libslurmdb-perl:
+slurm-llnl:
+slurm-llnl-sview:
+slurm-llnl-torque:
+
+
+
+# slurm-master
+# db
+mariadb-server:
+python-mysqldb:
+
+# slurm-dbd packages
+slurm-llnl-slurmdbd:
+# slurmctld_packages
+mailutils:
+#slurm-llnl:

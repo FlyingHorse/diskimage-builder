@@ -1,0 +1,23 @@
+# nfs client
+nfs-common:
+
+# common
+# support packages
+dmtcp:
+libopenmpi-dev:
+openmpi-bin:
+
+# slurm client
+libpmi0-dev:
+libslurm-dev:
+libslurm-perl:
+libslurmdb-perl:
+slurm-llnl:
+slurm-llnl-sview:
+slurm-llnl-torque:
+
+
+# slurm-worker
+libpam-slurm:
+#slurm-llnl:
+slurm-llnl-basic-plugins:
