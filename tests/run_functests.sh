@@ -4,8 +4,12 @@ set -eu
 set -o pipefail
 
 BASE_DIR=$(cd $(dirname "$0")/.. && pwd)
-export DIB_ELEMENTS=$BASE_DIR/elements
-export DIB_CMD=$BASE_DIR/bin/disk-image-create
+
+# then execute tests for elements
+export DIB_CMD=disk-image-create
+export DIB_ELEMENTS=$(python -c '
+import diskimage_builder.paths
+diskimage_builder.paths.show_path("elements")')
 
 # Setup sane locale defaults, because this information is leaked into DIB.
 export LANG=en_US.utf8
