@@ -7,4 +7,5 @@ sudo apt-get update
 
 # 默认安装linux-image-extra-3.13.0-108-generic，但是系统启动后uname -r却是106的，导致docker
 # 和nfs client失败
-sudo apt-get install -y --no-install-recommends linux-image-extra-3.13.0-106-generic
+sudo apt-get install -y --no-install-recommends linux-image-extra-3.13.0-106-generic \
+    linux-image-extra-virtual

@@ -21,7 +21,7 @@ gcc:
 libc6-dev:
 make:
 # other "standard" utilities
-kexec-tools:
+#kexec-tools:
 m4:
 moreutils:
 rsync:

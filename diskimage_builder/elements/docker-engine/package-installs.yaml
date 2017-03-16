@@ -1,0 +1,3 @@
+linux-image-extra-virtual:
+docker-engine:
+  version: 1.12.5
